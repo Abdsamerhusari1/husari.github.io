@@ -293,3 +293,92 @@ footer {
     width: 100%;
   }
   
+/* Initially hide the dropdown content */
+#education-content,
+#work-content,
+#about-content {
+  display: none;
+}
+
+/* Style the toggle button */
+.toggle-button {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #005885;
+}
+
+.dropdown-title {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid gray;
+}
+
+/* Style when the dropdown is active/open */
+.dropdown-title.active::before {
+  border-top: none;
+  border-bottom: 10px solid gray;  /* Make this the same size as border-top */
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.hidden {
+  display: none;
+}
+/* Style when the dropdown is active/open */
+.dropdown-title.active::before {
+  border-top: none;
+  border-bottom: 10px solid gray;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  /* Mobile view Header */
+  #header-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  #profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  #name-and-title {
+    text-align: center;
+  }
+
+  /* Mobile view Sections */
+  .section {
+    padding: 1rem;
+  }
+
+  .section-header {
+    font-size: 1.2rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
+}
+
+/* Optional: Add viewport for better scaling on various devices */
+/* It's generally a good practice to include the following line in your HTML head */
+/* <meta name="viewport" content="width=device-width, initial-scale=1"> */
