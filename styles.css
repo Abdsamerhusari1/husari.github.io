@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+  background-color: #F3F4F6;
+    line-height: 1.4; 
+
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(to right, #1e0bb3, #5e2aa3,#9e79cf);
+    color: white;
+    padding: 1.5rem;
+    
+  }
+  
+  #header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+  
+  #profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  #name-and-title {
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  #title {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  /* Container for main content and skills sidebar */
+  #container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+/* Main Content */
+   #main-content {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 1rem;
+    
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: 20px;  /* Added Space */
+  }
+
+  #about {
+    border: 1px solid #ccc;
+  }
+  
+  #work {
+    border: 1px solid #ccc;
+  }
+
+  #education {
+    border: 1px solid #ccc;
+  }
+  /* Skills Sidebar */
+  #sidebar {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: 20px;  /* Added Space */
+  }
+  
+  
+  
+  /* Section Styles */
+  section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Employment History */
+.employment-section {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .job-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .job-duration {
+    font-size: 1em;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .job-description {
+    margin-top: 10px;
+  }
+  
+  .skills-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+/* Education Section */
+.education-section {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .degree-title, .course-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  .degree-under-title {
+    font-size: 1em;
+    color: #515151;
+    margin-top: 2px;
+  }
+  
+  .degree-duration {
+    font-size: 1em;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .degree-description {
+    margin-top: 10px;
+  }
+  
+  .course-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+    
+/* Contact Information */
+#Contact {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+  }
+  
+  #contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+  }
+
+  .contact-icon-2{
+    font-size: 1.5em;
+    margin-right: 10px;
+    vertical-align: middle;
+
+  }
+  .contact-text {
+    font-size: 1em;
+  }
+  
+  .contact-text a {
+    color: #0073b1;
+    text-decoration: none;
+  }
+  
+  .contact-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Skills */
+#skills {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  #skills-list {
+    list-style: disc;
+    padding: 1;
+    column-count: 2;  /* Breaks the list into two columns */
+    column-gap: 3em;
+    margin-right: 20px;
+  }
+  
+  #skills-list li {
+    margin-bottom: 12px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Languages */
+#languages {
+    
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  #languages-list {
+    list-style: disc;
+    padding: 1;
+  }
+  
+  #languages-list li {
+    margin-bottom: 12px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+
+  /* Projects Section */
+#projects {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .project-box {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .project-box h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .project-box p {
+    font-size: 1em;
+  }
+  
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
