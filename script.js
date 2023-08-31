@@ -24,8 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if (content.style.display === 'none' || content.style.display === '') {
           hideOtherSections(contentId);
           content.style.display = 'block';
+          btn.classList.add('active');
+
         } else {
           content.style.display = 'none';
+          btn.classList.remove('active');
         }
       });
     }
