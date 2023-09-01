@@ -368,11 +368,11 @@ border-bottom: 10px solid gray;
 
 /* Mobile view Sections */
 .section {
-  padding: 1rem;
+  padding: 0.1rem;
 }
 
 .section-header {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .section-content {
