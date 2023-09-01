@@ -349,7 +349,7 @@ border-bottom: 10px solid gray;
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 /* Mobile view Header */
 #header-content {
   flex-direction: column;
