@@ -349,8 +349,6 @@ border-bottom: 10px solid gray;
 }
 
 
-
-/* Media Query for smaller screens */
 @media (max-width: 768px) {
   #container {
       flex-direction: column;
@@ -382,3 +380,8 @@ border-bottom: 10px solid gray;
 
 
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
