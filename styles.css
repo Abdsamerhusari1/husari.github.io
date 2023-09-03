@@ -348,46 +348,7 @@ border-top: none;
 border-bottom: 10px solid gray;
 }
 
-/* Responsive Design */
-@media only screen and (max-device-width: 480px) {
-/* Mobile view Header */
-#header-content {
-  flex-direction: column;
-  align-items: center;
-  margin-left: 0;
-}
 
-#profile-picture {
-  width: 200px;
-  height: 200px;
-}
-
-#name-and-title {
-  text-align: center;
-}
-
-/* Mobile view Sections */
-.section {
-  padding: 0.1rem;
-}
-
-.section-header {
-  font-size: 0.1rem;
-}
-
-.section-content {
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.box {
-  padding: 10px;
-}
-
-#main-content{
-  padding: 10px;
-}
-}
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
