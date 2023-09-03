@@ -397,6 +397,10 @@ border-bottom: 10px solid gray;
       width: 100%; /* Take up the full width */
       margin: 20px 0; /* Add some vertical margin */
   }
+  #section {
+    padding: 0.1rem;
+  }
+  
 }
 
 *, *::before, *::after {
