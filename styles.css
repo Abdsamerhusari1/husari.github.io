@@ -380,13 +380,6 @@ border-bottom: 10px solid gray;
   padding: 10px;
 }
 
-.box {
-  padding: 10px;
-}
-
-#main-content{
-  padding: 10px;
-}
 }
 
 /* Media Query for smaller screens */
