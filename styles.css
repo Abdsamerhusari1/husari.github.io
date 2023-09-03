@@ -389,24 +389,7 @@ border-bottom: 10px solid gray;
 }
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-  #container {
-      flex-direction: column;
-      align-items: center; /* Center the children horizontally */
-  }
-  #main-content {
-      flex: none; /* No flexibility */
-      width: auto; /* Auto width based on content */
-      max-width: 600px; /* Set a maximum width */
-      margin: 20px auto; /* Center the block and add some vertical margin */
-  }
-  #sidebar {
-      flex: 1;  /* Make it flexible */
-      width: 100%; /* Take up the full width */
-      margin: 20px 0; /* Add some vertical margin */
-  }
-}
+
 
 *, *::before, *::after {
   box-sizing: border-box;
