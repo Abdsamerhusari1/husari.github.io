@@ -619,7 +619,7 @@ textarea.contact-input {
 .contact-icon {
   background-color: var(--glaucous);
   font-size: 2.4rem;
-  padding: 20px;
+  padding: 6px;
   border-radius: 50%;
 }
 
@@ -631,9 +631,12 @@ textarea.contact-input {
 }
 
 .contact-item-link {
+  font-size: 13px; 
   transition: var(--transition-1);
-  overflow-wrap: break-word !important;/* This will break the email onto the next line if it overflows */
-  word-wrap: break-word !important; /* Fallback for older browsers */
+}
+
+.contact-icon ion-icon {
+  font-size: 20px; 
 }
 
 
@@ -798,6 +801,13 @@ textarea.contact-input {
     white-space: nowrap;  
   }
 
+  .contact-item-link {
+    font-size: 20px; 
+    transition: var(--transition-1);
+  }
+  .contact-icon ion-icon {
+    font-size: 25px; 
+  }
 
 }
 
