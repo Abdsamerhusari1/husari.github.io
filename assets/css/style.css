@@ -186,7 +186,7 @@ body {
   font-family: var(--ff-barlow);
   font-size: var(--fs-2);
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 1px;
 }
 
 .h2,
@@ -228,7 +228,7 @@ body {
 }
 
 .header.nav-active {
-  height: 335px;
+  height: 450px;
   transition-duration: 0.35s;
 }
 
@@ -630,7 +630,12 @@ textarea.contact-input {
   font-weight: var(--fw-600);
 }
 
-.contact-item-link { transition: var(--transition-1); }
+.contact-item-link {
+  transition: var(--transition-1);
+  overflow-wrap: break-word !important;/* This will break the email onto the next line if it overflows */
+  word-wrap: break-word !important; /* Fallback for older browsers */
+}
+
 
 .contact-item-link:not(address):is(:hover, :focus) { color: var(--white); }
 
@@ -806,6 +811,7 @@ textarea.contact-input {
 
 @media (min-width: 768px) {
 
+  
   /**
    * PORTFOLIO
    */
@@ -874,8 +880,6 @@ textarea.contact-input {
     margin-inline: auto;
   }
 
-
-
   /**
    * HEADER
    */
@@ -908,6 +912,7 @@ textarea.contact-input {
     margin-block-start: 0;
     --padding: 7px 30px;
   }
+
 
 
 
