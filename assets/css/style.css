@@ -282,6 +282,20 @@ body {
   margin-block-start: 15px;
 }
 
+.btn-linkedin {
+  background-color: transparent !important;
+  border-radius: 1000px;
+  margin-right: -40px; 
+  margin-left: -40px; 
+}
+
+.btn-linkedin img {
+  width: 35px;
+  height: 30px;
+}
+
+
+
 
 
 
