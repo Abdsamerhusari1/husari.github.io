@@ -800,6 +800,7 @@ textarea.contact-input {
   .employment-card {
     background-size: 115%;
     padding-inline: 80px;
+    padding: 70px 70px;
   }
 
   .employment-card:is(:hover, :focus) { background-size: 130%; }
@@ -1000,6 +1001,10 @@ textarea.contact-input {
     margin-block-end: 50px;
   }
 
+  .employment-card{
+    padding: 100px 70px;
+  }
+
   .employment-card .card-subtitle { font-size: var(--fs-5); }
 
   .employment-card .card-text{
@@ -1009,7 +1014,10 @@ textarea.contact-input {
   .employment-card .card-bullets{
     font-size: var(--fs-5);
   }
-
+  
+  .employment-card .card-bullets li {
+    padding-left: 20px; 
+  }
 
   /**
    * Education
@@ -1019,6 +1027,10 @@ textarea.contact-input {
     margin-block-end: 50px;
   }
 
+  .education-card  { 
+    padding: 50px 70px;
+  }
+  
   .education-card .educ-card-subsubtitle{
     font-size: var(--fs-4);  
   }
