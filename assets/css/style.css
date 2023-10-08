@@ -20,6 +20,7 @@
   --rufous: hsl(2, 85%, 35%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
+  --back: hsl(213, 59%, 13%);
 
   /**
    * typography
@@ -52,7 +53,7 @@
    * spacing
    */
 
-  --section-padding: 60px;
+  --section-padding: 20px;
 
   /**
    * shadow
@@ -131,7 +132,7 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
+  background-color: var(--back);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
@@ -156,7 +157,9 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 20px; }
+.container { 
+  padding-inline: 20px; 
+}
 
 .btn {
   color: var(--white);
@@ -219,7 +222,7 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: var(--space-cadet);
+  background-color: var(--back);
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -910,7 +913,7 @@ textarea.contact-input {
   }
 
   .header.active {
-    background-color: var(--space-cadet);
+    background-color: var(--back);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
@@ -999,21 +1002,6 @@ textarea.contact-input {
     font-size: 1.7rem;
 
   }
-
-  .rotate-img {
-    display: block;
-    position: absolute;
-    bottom: -60px;
-    left: -60px;
-    width: 120px;
-    animation: rotate360 15s linear infinite reverse;
-  }
-
-  @keyframes rotate360 {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(1turn); }
-  }
-
 
 
   /**
