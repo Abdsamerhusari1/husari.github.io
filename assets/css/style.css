@@ -975,21 +975,24 @@ textarea.contact-input {
   .elem-1 {
     top: 50px;
     left: -130px;
+    color: var(--vivid-sky-blue);
   }
 
-  .elem-1 .elem-title { color: var(--vivid-sky-blue); }
-
-
-  .elem-title {
+  .elem-title .number {
     font-size: 4.5rem;
     line-height: 1.1;
+    color: var(--vivid-sky-blue);
   }
+  
 
   .elem-text {
     max-width: 10ch;
     color: var(--black);
     font-weight: var(--fw-700);
     line-height: 1.1;
+    margin-top: 13px;
+    font-size: 1.7rem;
+
   }
 
   .rotate-img {
