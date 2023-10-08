@@ -1,230 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdulrahman Husari - Software Engineer Student</title>
 
-  <title>Abdulrahman Husari - CV</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- 
+    - favicon
+  -->
+<!-- Updated favicon -->
+<link rel="icon" href="./assets/images/cv_9227768.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
-<body>
 
-  <!-- Header -->
-  <header>
-    <div id="header-content">
-      <img src="images/me.jpeg" alt="Your Profile Picture" id="profile-picture">
-      <div id="name-and-title">
-        <h1>Abdulrahman Husari</h1>
-        <p id="title">Master of Engineering - Computer Science and Software Engineering (Civilingenjör i Datateknik)</p>
+<body id="top">
 
-      </div>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Abdulrahman Husari</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Employment</a>
+          </li>
+
+          <li>
+            <a href="#education" class="navbar-link" data-nav-link>Education</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Download CV</a>
+          </li>
+
+        </ul>
+      </nav>
+
     </div>
-    
   </header>
 
-  <div id="container">
-    <!-- Main Content -->
-    <div id="main-content">
 
-      <!-- About Me -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>As a final-year MSc.E Computer Science and Engineering student gearing up for my comprehensive exams in June 2024, I bring a unique blend of ambition, technical aptitude, and collaborative spirit. Building on the strong foundation of my bachelor’s degree in computer engineering, I’ve honed a well-rounded skill set that includes not just robust coding capabilities but also excellent communication and leadership qualities.</p>
-            
-        <p>    Thriving on challenges and unfazed by problems, I have an innate ability to quickly decipher complex issues. I am a lifelong learner, committed to staying updated with emerging technologies, methodologies, and best practices in IT and software engineering. My adaptability and eagerness to grow make me a strong contender in fast-paced, ever-evolving tech environments.</p>
-            
-        <p>    Equally comfortable working independently or as part of a diverse team, I pride myself on being a reliable and valuable team member. I am proactive in contributing to team objectives, always open to sharing knowledge, and consistently focused on achieving collective goals.</p>
-            
-        <p>    I am actively seeking opportunities in IT, technology, and programming, where I can leverage my skills and continue along a trajectory of professional growth and development.</p>
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">5'th</p>
+
+              <p class="elem-text">Year Sudent</p>
+            </div>
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Abdulrahman Husari</strong> Software Engineer Student
+            </h2>
+
+            <p class="hero-text">
+              Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
       </section>
 
-<!-- Work Section -->
-<section id="work">
-    <h2 id="work-toggle" class="dropdown-title">Employment History <span class="arrow"></span></h2>
-    <div id="work-content" class="hidden">
-        <div class="employment-section">
-            <div class="job-title">IT Servicedesk Agent, Academicwork, Malmö</div>
-            <div class="job-duration">September 2022 — Present</div>
-            <div class="job-description">
-                Acted as a customer-facing consultant for TietoEVRY, focusing on delivering world-class IT support. Specialized in problem-solving to achieve high customer satisfaction.
-                <ul class="skills-list">
-                <li>Excelled in customer service by resolving complex technical issues efficiently.</li>
-                <li>Ensured seamless customer experiences through proactive support.</li>
-                <li>Demonstrated commitment to maintaining service quality in a fast-paced environment.</li>
-                </ul>
-            </div>
-            </div>
-        
-            <div class="employment-section">
-            <div class="job-title">Team Leader, Storesupport, Halmstad</div>
-            <div class="job-duration">May 2021 — August 2022</div>
-            <div class="job-description">
-                Managed and coordinated a team of approximately 75 employees, overseeing planning, scheduling, and problem resolution.
-                <ul class="skills-list">
-                <li>Fostered a collaborative environment to optimize team productivity.</li>
-                <li>Exercised strong self-discipline and situational awareness to handle tasks independently.</li>
-                <li>Utilized exceptional planning and technical skills to manage team activities.</li>
-                <li>Excelled in multilingual communication, enhancing team cohesion and customer relations.</li>
-                </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  
-
-    <!-- Education -->
-<section id="education-section">
-    <h2 id="education-toggle" class="dropdown-title">Education <span class="arrow"></span></h2>
-    <div id="education-content" class="hidden">
-
-        <div class="education-section">
-        <div class="degree-title">MSc.E, Computer Science and Engineering, Lund University, Lund</div>
-        <div class="degree-under-title">(Civilingenjör i Datateknik, Lund University, Lund)</div>
-
-        <div class="degree-duration">August 2022 — Present (Expected Graduation: June 2024)</div>
-        <div class="degree-description">
-            <p>I joined Lund University as a "senare del student," enabling me to enter the program at a more advanced stage. I am currently in my final year at this premier institution with a focus on data technology. Upon completion, I aim to transition into the software engineering industry fully equipped with cutting-edge skills.</p>
-        </div>
-        </div>
-    
-        <div class="education-section">
-        <div class="degree-title">B.Sc., Computer Science and Engineering, Högskolan i Halmstad, Halmstad</div>
-        <div class="degree-under-title">(Civilingenjör i Datateknik, Halmstad University, Halmstad)</div>
-
-        <div class="degree-duration">January 2019 — June 2022</div>
-        <div class="degree-description">
-            <p>Successfully completed my bachelor's degree with an emphasis on projects and coursework that provided me with a robust set of skills in technology.</p>
-        </div>
-        </div>
-    
-        <div class="education-section">
-        <div class="course-title">Additional Courses</div>
-        <ul class="course-list">
-            <li>Introduction to Programming in Python - Borås University</li>
-            <li>Programming for Effective Problem Solving - Umeå University</li>
-        </ul>
-        </div>
-    </div>
-    </section>
-  
-
-<!-- Projects Section -->
-<section id="projects">
-    <h2 id="projects-toggle" class="dropdown-title">Projects and Academic Work<span class="arrow"></span></h2>
-    <div id="projects-content" class="hidden">
-        <div class="project-box">
-            <h4>Carpooling Web Application</h4>
-            <p>Worked within an Agile Scrum team to develop a comprehensive carpooling web application, facilitating more sustainable travel options. Responsible for backend logic, database design and frontend design.</p>
-            </div>
-            <div class="project-box">
-            <h4>Racing Clock Application</h4>
-            <p>Engineered a real-time racing clock application using Agile XP methodologies. Focused on performance optimization and user experience.</p>
-            </div>
-            <div class="project-box">
-            <h4>Bachelor's Degree Project - 365id in Halmstad</h4>
-            <p>Enhanced OCR capabilities and image output quality for ID scanners, providing more reliable and efficient identification processes.</p>
-            </div>
-            <div class="project-box">
-            <h4>Personal Project: Neural Network-based OCR for License Plates</h4>
-            <p>Independently designed and implemented a neural network to perform OCR on license plates, improving the efficiency and accuracy of vehicle identification.</p>
-            </div>
-            <div class="project-box">
-            <h4>City Trafik Skola i Västervik - Website Development</h4>
-            <p>Designed and deployed the official website for City Trafik Skola i Västervik, focusing on user experience. <a href="https://citytrafikskolavastervik.se/" target="_blank">Visit website</a></p>
-      </div>
-    </div>
-  </section>
-  
-  
-  
-
-    </div>
-
-    <!-- Skills -->
-    <div id="sidebar">
-
-    <!-- Contact -->
-    <section id="Contact">
-        <h3>Contact Information</h3>
-        <ul id="contact-list">
-        <li class="contact-item">
-            <span class="contact-icon">&#128204;</span>
-            <span class="contact-text">Sweden</span>
-        </li>
-        <li class="contact-item">
-            <span class="contact-icon">&#128222;</span>
-            <span class="contact-text">0760708715</span>
-        </li>
-        <li class="contact-item">
-            <span class="contact-icon-2">&#9993;</span>
-            <a href="mailto:abdalrahmansamerhusari@gmail.com">abdalrahmansamerhusari@gmail.com</a>
-
-        </li>
-        <li class="contact-item">
-            <span class="contact-icon">&#128100;</span>
-            <span class="contact-text">
-            <a href="https://www.linkedin.com/in/abdulrahman-husari/" target="_blank">LinkedIn Profile</a>
-            </span>
-        </li>
-        </ul>
-    </section>
-    
-  
-    <!-- Skills -->
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul id="skills-list">
-        <li>Java</li>
-        <li>Python</li>
-        <li>C</li>
-        <li>C#</li>
-        <li>.NET framework</li>
-        <li>Raspberry Pi</li>
-        <li>MySQL</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>Github</li>
-        <li>Agile</li>
-        <li>Inner Source</li>
-        <li>HTML</li>
-        <li>Matlab & Simulink</li>
-        <li>Microsoft Office</li>
-        <li>Customer Service</li>
-        <li>Adaptability</li>
-        <li>Problem Solving</li>
-        <li>Communication</li>
-        <li>Ability to work under stress</li>
-        <li>Teamwork</li>
-        <li>Leadership</li>
-        <li>Easy learner</li>
-        <li>Decision Making</li>
-        </ul>
-    </section>
-  
-
-    <!-- Languages -->
-    <section id="languages">
-        <h3>Languages</h3>
-        <ul id="languages-list">
-        <li>Swedish</li>
-        <li>English</li>
-        <li>Arabic</li>
-        </ul>
-    </section>
-  
-    </div>
-  </div>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Designed by Abdulrahman Husari</p>
-    </footer>
 
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
       
-  <script src="script.js"></script>
+          <div class="about-content">
+      
+            <p class="section-subtitle">I'm a Final-Year MSc.E Computer Science and Engineering Student</p>
+      
+            <h2 class="h2 section-title">Driven to Innovate and Solve Challenges in Tech</h2>
+      
+            <p class="section-text">
+              Currently preparing for my comprehensive exams scheduled for June 2024, I bring to the table an unparalleled mix of dedication, technical prowess, and teamwork. My academic journey began with a Bachelor's in Computer Engineering, which served as a strong base for the comprehensive skill set I have today.
+            </p>
+      
+            <p class="section-text">
+              Relishing complex challenges and problem-solving, I possess a knack for deciphering intricate issues swiftly. Committed to lifelong learning, I continuously strive to stay abreast of the latest advances in IT and software engineering. My adaptability and enthusiasm for growth make me an asset in rapidly changing technological landscapes.
+            </p>
+      
+            <p class="section-text">
+              Whether I'm working solo or collaborating within a diverse team, I consistently contribute to achieving our shared objectives. Known for my reliability, I am proactive in sharing knowledge and expertise with peers to enrich our collective learning and performance.
+            </p>
+      
+            <p class="section-text">
+              I am on the hunt for roles in IT, technology, and programming that allow me to capitalize on my skill set while offering avenues for professional growth and development.
+            </p>
+      
+      
+          </div>
+      
+        </div>
+      </section>
+      
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Employment History</p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+                <div class="card-content">
+            
+                  <p class="card-subtitle">Academicwork, Malmö</p>
+            
+                  <h3 class="h3 card-title">IT Servicedesk Agent at TietoEVRY</h3>
+                  <h4 class="h4 card-title">September 2022 — Present</h4>
+                  <p class="card-text">
+                    Acted as a front-line consultant, emphasizing world-class IT support. Acquired proficiency in resolving complex technical challenges to attain high levels of customer satisfaction.
+                  </p>
+            
+                  <ul class="card-bullets">
+                    <li>Excelled in customer service by resolving complex technical issues efficiently.</li>
+                    <li>Ensured seamless customer experiences through proactive support.</li>
+                    <li>Maintained high service quality in a fast-paced setting.</li>
+                  </ul>
+                        
+                </div>
+              </a>
+            </li>
+            
+
+            <li>
+              <a class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Storesupport, Halmstad</p>
+
+                  <h3 class="h3 card-title">Team Leader</h3>
+                  <h4 class="h4 card-title">May 2021 — August 2022</h4>
+                  <p class="card-text">
+                    Managed and coordinated a team of approximately 75 employees, overseeing planning, scheduling, and problem resolution.
+                  </p>
+
+                  <ul class="card-bullets">
+                    <li>Fostered a collaborative environment to optimize team productivity.</li>
+                    <li>Exercised strong self-discipline and situational awareness to handle tasks independently.</li>
+                    <li>Utilized exceptional planning and technical skills to manage team activities.</li>
+                    <li>Excelled in multilingual communication, enhancing team cohesion and customer relations.</li>
+                  </ul>
+
+                </div>
+              </a>
+            </li>
+
+           
+          </ul>
+
+        </div>
+      </section>
 
 
+      <!-- 
+        - #Education
+      -->
+      <section class="section education" id="education">
+        <div class="container">
+          <p class="section-subtitle">Education</p>
+
+          <ul class="education-list">
+
+            <li>
+              <a class="education-card">
+                <div class="educ-card-content">
+            
+                  <p class="educ-card-subtitle">MSc.E, Computer Science and Engineering, Lund University, Lund</p>
+                  <h3 class="educ-card-subsubtitle">Civilingenjör i Datateknik, Lund University, Lund</h3>
+                  <h4 class="h4 educ-card-date">August 2022 — Present (Expected Graduation: June 2024)</h4>
+                  <p class="educ-card-text">I joined Lund University as a "senare del student," enabling me to enter the program at a more advanced stage. I am currently in my final year at this premier institution with a focus on data technology. Upon completion, I aim to transition into the software engineering industry fully equipped with cutting-edge skills.</p>
+            
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="education-card">
+                <div class="educ-card-content">
+            
+                  <p class="educ-card-subtitle">B.Sc., Computer Science and Engineering, Halmstad University, Halmstad</p>
+                  <h3 class="educ-card-subsubtitle">Civilingenjör i Datateknik, Högskilan i Halmstad, Halmstad</h3>
+                  <h4 class="h4 educ-card-date">January 2019 — June 2022</h4>
+                  <p class="educ-card-text">Successfully completed my bachelor's degree with an emphasis on projects and coursework that provided me with a robust set of skills in technology.</p>
+            
+                </div>
+              </a>
+            </li>
+            
+          </ul>
+      </section>
+
+
+
+    
+
+      <!-- 
+        - #Projects
+      -->
+      <section class="section blog" id="projects">
+        <div class="container">
+          <p class="section-subtitle">Projects and Academic Work</p>
+          <ul class="blog-list">
+            
+            <!-- Blog Entry for Carpooling Web Application -->
+            <li>
+              <div class="blog-card">
+                <a href="#" class="card-tag">Web Development</a>
+                <h3 class="card-title">Carpooling Web Application</h3>
+                <p class="card-text">Worked within an Agile Scrum team to develop a comprehensive carpooling web application, facilitating more sustainable travel options. Responsible for backend logic, database design and frontend design.</p>
+              </div>
+            </li>
+
+            <!-- Blog Entry for Racing Clock Application -->
+            <li>
+              <div class="blog-card">
+                <a href="#" class="card-tag">Software Development</a>
+                <h3 class="card-title">Racing Clock Application</h3>
+                <p class="card-text">Engineered a real-time racing clock application using Agile XP methodologies. Focused on performance optimization and user experience.</p>
+              </div>
+            </li>
+
+            <!-- Blog Entry for Bachelor's Degree Project -->
+            <li>
+              <div class="blog-card">
+                <a href="#" class="card-tag">Academic</a>
+                <h3 class="card-title">Bachelor's Degree Project - 365id in Halmstad</h3>
+                <p class="card-text">Enhanced OCR capabilities and image output quality for ID scanners, providing more reliable and efficient identification processes.</p>
+              </div>
+            </li>
+
+            <!-- Blog Entry for Neural Network-based OCR for License Plates -->
+            <li>
+              <div class="blog-card">
+                <a href="#" class="card-tag">Machine Learning</a>
+                <h3 class="card-title">Personal Project: Neural Network-based OCR for License Plates</h3>
+                <p class="card-text">Independently designed and implemented a neural network to perform OCR on license plates, improving the efficiency and accuracy of vehicle identification.</p>
+              </div>
+            </li>
+
+            <!-- Blog Entry for City Trafik Skola i Västervik - Website Development -->
+            <li>
+              <div class="blog-card">
+                <a href="#" class="card-tag">Web Development</a>
+                <h3 class="card-title">City Trafik Skola i Västervik - Website Development</h3>
+                <p class="card-text">Designed and deployed the official website for City Trafik Skola i Västervik, focusing on user experience.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+          <p class="section-subtitle">My Skills</p>
+          <ul class="skills-list">
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Java</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Python</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">C</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">C#</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">.NET framework</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Raspberry Pi</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">MySQL</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">JavaScript</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Git</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Github</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Agile</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Inner Source</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">HTML</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Matlab & Simulink</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Microsoft Office</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Customer Service</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Adaptability</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Problem Solving</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Communication</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Ability to work under stress</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Teamwork</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Leadership</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Easy learner</h3></div></li>
+            <li class="skills-item"><div class="wrapper"><h3 class="skills-title">Decision Making</h3></div></li>
+          </ul>
+        </div>
+      </section>
+      
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Don't be shy</p>
+
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+
+            <div class="wrapper">
+
+              <form action="contact.php" method="post" class="contact-form">
+
+                <input type="text" name="name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+                <button type="submit" class="btn-submit">Submit Message</button>
+
+              </form>
+
+              <ul class="contact-list">
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Address</h3>
+
+                    <address class="contact-item-link">
+                      Lund, Skåne, Sweden
+                    </address>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <a href="mailto:hello@ethan.com" class="contact-item-link">abdalrahmansamerhusari@gmail.com</a>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Phone</h3>
+
+                    <a href="tel:+1234567890" class="contact-item-link">+46 760708715</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2023 <a href="#" class="copyright-link">Abdulrahman Husari</a>. All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Back Top</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
