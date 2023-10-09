@@ -825,7 +825,7 @@ textarea.contact-input {
  * responsive for larger than 992px screen
  */
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
 
   /**
    * CUSTOM PROPERTY
