@@ -281,7 +281,7 @@ body {
   color: var(--white);
   font-family: var(--ff-barlow);
   padding-block: 3px;
-  transition: var(--transition-1);
+  transition: var(--transition-4);
 }
 
 .navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
@@ -825,7 +825,7 @@ textarea.contact-input {
  * responsive for larger than 992px screen
  */
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
 
   /**
    * CUSTOM PROPERTY
@@ -865,6 +865,15 @@ textarea.contact-input {
   /**
    * HEADER
    */
+  
+  .header > .container {
+    height: 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+  
 
   .nav-toggle-btn { display: none; }
 
@@ -892,9 +901,15 @@ textarea.contact-input {
 
   .navbar .btn {
     margin-block-start: 0;
-    --padding: 7px 30px;
+    --padding: 7px 10px;
   }
 
+  .btn-linkedin {
+    background-color: transparent !important;
+    border-radius: 1000px;
+    padding-right: 0.5%; 
+    padding-left: 25px; 
+  }
 
 
 
@@ -906,6 +921,7 @@ textarea.contact-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-block-start: 30px;
   }
 
   .hero-content { text-align: left; }
